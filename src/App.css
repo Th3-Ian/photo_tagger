@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	margin: none;
+	padding: none;
 }
 
 .App-logo {
@@ -23,12 +25,49 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* NAV */
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	background-color:coral;
+	height: 12vh;
+	color: white;
+	padding: 0 40px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition: all .3s ease-in-out;
+}
+
+nav ul {
+	font-size: 40px;
+	font-weight: 600;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	list-style-type: none;
+	width: 100%;
+}
+
+li {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav-link :hover {
+	color: white;
+	transition: all .3s ease-in-out;
+}
+
+/* HOMEPAGE CARDS */
 
 .img-container {
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	grid-gap: 25px;
-	margin: 60px 10px 60px 60px;
+	margin: 60px;
+	text-align: center;
+	justify-content: space-evenly;
+  justify-items: center;
 
 }
 
@@ -44,16 +83,19 @@
 .img-card img {
 	height: 250px;
 	width: 375px;
-	object-fit: fill;
-	transition: all .7s ease-in-out;
+	object-fit: contain;
+	transition: all .3s ease-in-out;
+
 }
 
 .holder h2 {
 	margin: 0;
+	text-decoration: none;
+	color: black;
 }
 
 .img-card :hover {
-	transition: all .7s ease-in-out;
+	transition: all .3s ease-in-out;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	height: 110%;
 	width: 110%;

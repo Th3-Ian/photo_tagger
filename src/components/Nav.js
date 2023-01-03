@@ -5,11 +5,11 @@ const Nav = () => {
   return (
 		<nav>
 			<ul>
-				<Link to="/">
+				<Link style={{ textDecoration: 'none' }} className='nav-link' to="/">
 					<li>Home</li>
 				</Link>
-				<Link to="/leaderboard">
-					<li>Leaderboard</li>
+				<Link style={{ textDecoration: 'none' }} className='nav-link' to="/leaderboard">
+					<li >Leaderboard</li>
 				</Link>
 			</ul>
 

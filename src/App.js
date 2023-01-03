@@ -10,9 +10,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path='/' element={<Home />} />
-          {/* <Route path="/picture1" element={} />
-					<Route path="/picture2" element={} />
-					<Route path="/picture3" element={} /> */}
+          {/* <Route path="/australia" element={} />
+					<Route path="/spain" element={} />
+					<Route path="/greece" element={} /> */}
         </Routes>
       </BrowserRouter>
     </>
