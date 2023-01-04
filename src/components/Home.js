@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <section className='img-container'>
         <div className='holder'>
-          <Link style={{ textDecoration: 'none' }}>
+          <Link style={{ textDecoration: 'none' }} to='/australia'>
             <div className='img-card'>
               <img src={Beach} alt='wheres waldo at Paradise Beach, AU' />
             </div>
@@ -17,7 +17,7 @@ const Home = () => {
           </Link>
         </div>
         <div className='holder'>
-          <Link style={{ textDecoration: 'none' }}>
+          <Link style={{ textDecoration: 'none' }} to='/spain'>
             <div className='img-card'>
               <img src={Spain} alt='wheres waldo at Bunol, Spain' />
             </div>
@@ -25,7 +25,7 @@ const Home = () => {
           </Link>
         </div>
         <div className='holder'>
-          <Link style={{ textDecoration: 'none' }}>
+          <Link style={{ textDecoration: 'none' }} to='/greece'>
             <div className='img-card'>
               <img src={Greece} alt='wheres waldo in Ancient Greece' />
             </div>
