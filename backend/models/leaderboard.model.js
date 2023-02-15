@@ -2,13 +2,15 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const LeaderboardModelSchema = new Schema({
+const LeaderboardSchema = new Schema({
   name: String,
   score: Number,
   required: [true, 'Please write your name']
 });
 
-const LeaderboardModel = mongoose.model(
-  'LeaderboardModel',
-  LeaderboardModelSchema
-);
+LeaderboardSchema.virtual('url').get(function () {
+  // We don't use an arrow function as we'll need the this object
+  return `/leaderboard//${this._id}`;
+});
+
+module.exports = mongoose.model('Leaderboard', LeaderboardSchema);
