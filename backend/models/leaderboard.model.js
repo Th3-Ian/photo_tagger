@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 const LeaderboardSchema = new Schema({
   name: String,
   score: Number,
+  map: String,
   required: [true, 'Please write your name']
 });
 
